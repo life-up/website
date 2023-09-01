@@ -1,17 +1,27 @@
-import { Component } from 'solid-js';
+import { Component } from "solid-js";
 
 interface Props {
-  title: string
+  title: string;
 }
 
 const Header: Component<Props> = (props) => {
   return (
-    <header class="bg-white shadow">
-      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold leading-tight text-gray-900">
-          {props.title}
-        </h1>
-      </div>
+    <header className="inset-x-0 top-0 z-50">
+      <nav
+        className="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div className="flex lg:flex-1">
+          <a href="#" className="-m-1.5 p-1.5">
+            <span className="text-xl">LifeUP</span>
+          </a>
+        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            Log in <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </nav>
     </header>
   );
 };
