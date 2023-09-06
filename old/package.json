@@ -1,0 +1,25 @@
+{
+  "name": "vite-solid-tailwind-starter",
+  "version": "1.0.0",
+  "description": "Starter using Vite + Solid + Tailwind CSS",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4",
+    "vite": "^2.3.8",
+    "vite-plugin-solid": "^2.0.0"
+  },
+  "dependencies": {
+    "@suid/icons-material": "^0.6.9",
+    "@suid/material": "^0.14.2",
+    "@suid/vite-plugin": "^0.1.4",
+    "solid-app-router": "^0.0.50",
+    "solid-js": "^1.0.0"
+  }
+}
