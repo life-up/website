@@ -18,6 +18,7 @@
     "@types/jest": "^29.5.4",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "cypress": "^13.1.0",
     "autoprefixer": "^10.4.15",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
@@ -41,7 +42,8 @@
     "client:pron": "scripty",
     "client:serve": "scripty",
     "test:unit": "scripty",
-    "test": "jest --collectCoverage --reporters default jest-stare"
+    "test": "jest --collectCoverage --reporters default jest-stare",
+    "test:e2e": "cypress open"
   },
   "jest-stare": {
     "resultDir": "../../docs/jest-stare",
