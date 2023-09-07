@@ -19,10 +19,11 @@
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@src/*": ["src/*"]
     },
     "jsx": "react-jsx" // react18这里也可以改成react-jsx
   },
-  "include": ["./src", "tests"],
+  "include": ["./src", "tests", "test/unit/index.spec.ts"],
   "exclude": ["node_modules", "build", "scripts"]
 }

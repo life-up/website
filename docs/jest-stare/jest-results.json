@@ -1,0 +1,132 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 1,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 1,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 2,
+  "numTotalTests": 2,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1694068310125,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 1,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1694068310803,
+        "runtime": 566,
+        "slow": false,
+        "start": 1694068310237
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "D:\\lifeup-website\\test\\unit\\test.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "a"
+          ],
+          "duration": 5,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": 2,
+                "expected": 3,
+                "message": "expect(received).toBe(expected) // Object.is equality\n\nExpected: 3\nReceived: 2",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 3\nReceived: 2\n    at Object.toBe (D:\\lifeup-website\\test\\unit\\test.spec.ts:5:23)\n    at Promise.then.completed (D:\\lifeup-website\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (D:\\lifeup-website\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (D:\\lifeup-website\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at _runTest (D:\\lifeup-website\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (D:\\lifeup-website\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (D:\\lifeup-website\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (D:\\lifeup-website\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (D:\\lifeup-website\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (D:\\lifeup-website\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (D:\\lifeup-website\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (D:\\lifeup-website\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
+          ],
+          "fullName": "a a",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "a"
+        }
+      ],
+      "failureMessage": "  ● a › a\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: 3\n    Received: 2\n\n      3 | describe.only(\"a\", () => {\n      4 |   test(\"a\", () => {\n    > 5 |     expect(sum(1, 1)).toBe(3);\n        |                       ^\n      6 |   });\n      7 | });\n      8 |\n\n      at Object.toBe (test/unit/test.spec.ts:5:23)\n"
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1694068310934,
+        "runtime": 80,
+        "slow": false,
+        "start": 1694068310854
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "D:\\lifeup-website\\test\\unit\\index.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "a"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "a a",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "a"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}
