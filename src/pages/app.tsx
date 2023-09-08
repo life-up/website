@@ -4,7 +4,9 @@ import { appRoutes } from './app.routes';
 
 const App = () => {
   return (
-    <HashRouter>{RoutesService.renderRoutes(appRoutes)}</HashRouter>
+    <div className="min-h-screen">
+      <HashRouter>{RoutesService.renderRoutes(appRoutes)}</HashRouter>
+    </div>
   );
 };
 

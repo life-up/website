@@ -7,7 +7,7 @@ function getAlias() {
   for (let attr in tsConfigPath) {
     const aliasKey = attr.replace(/\/\*$/, '');
     let [aliasValue] = tsConfigPath[attr];
-    if (aliasValue === '*') aliasValue = 'src';
+    if (aliasValue === 'src/*') aliasValue = 'src';
     else aliasValue = 'src/' + aliasValue.replace(/\/\*$/, '');
     alias[aliasKey] = path.resolve(__dirname, '..', aliasValue);
   }

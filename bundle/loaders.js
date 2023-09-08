@@ -147,7 +147,7 @@ class LoaderFactory {
     this.loaders.push(
       TsLoader,
       AssetsLoader,
-      ...cssLoaderArr
+      ...cssLoaderArr,
     );
 
     return this.loaders;
