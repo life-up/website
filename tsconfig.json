@@ -27,6 +27,6 @@
     },
     "jsx": "react-jsx"
   },
-  "include": ["./src", "tests", "typings"],
+  "include": ["./src/**/*", "tests", "typings"],
   "exclude": ["node_modules", "build", "scripts"]
 }

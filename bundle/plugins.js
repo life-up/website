@@ -6,6 +6,7 @@ const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const { NODE_ENV, BUNDLEANA } = process.env;
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 class PluginFactory {
   constructor() {
@@ -53,11 +54,21 @@ class PluginFactory {
   getHotModuleReplacementPlugin() {
     this.plugins.push(new ReactRefreshPlugin())
   }
-
+  getEslintPlugin() {
+    this.plugins.push(new ESLintPlugin({
+      extensions: ['ts', 'tsx'],
+      emitWarning: true, // 这个配置需要打开，才能在控制台输出warning信息
+      emitError: true,
+      threads: true, // 这个配置需要打开，才能在控制台输出error信息
+      fix: true,// 是否自动修复，如果是，每次保存时会自动修复可以修复的部分}}))
+      lintDirtyModulesOnly: true
+    }))
+  }
   getPlugins() {
     if (!this.isProd) {
       // 热更新
       this.getHotModuleReplacementPlugin();
+      this.getEslintPlugin();
     } else {
       this.getMiniCssExtractPlugin();
     }
