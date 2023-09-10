@@ -4,6 +4,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react-hooks', 'prettier'],
   parserOptions: {
     project: './tsconfig.json',
+    tsconfigRootDir: __dirname
   },
   ignorePatterns: ["*.js"],
   extends: ['plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'prettier'],
