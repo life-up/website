@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import {Restore,Favorite,LocationOn} from '@mui/icons-material';
+import { Restore, Favorite, LocationOn } from '@mui/icons-material';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 
 const Footer: FC = () => {
