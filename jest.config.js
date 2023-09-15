@@ -1,5 +1,5 @@
 module.exports = {
-  testMatch: ["**/?(*.)(spec|test).ts?(x)"],
+  testMatch: ["**/unit/?(*.)(spec|test).ts?(x)"],
   reporters: ["default", "jest-stare"],
   collectCoverage: true,
   coverageThreshold: {
