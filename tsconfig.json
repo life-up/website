@@ -28,7 +28,7 @@
     "jsx": "react-jsx",
     "types": ["hardhat"]
   },
-  "include": ["./src/**/*", "./scripts", "tests", "typings"],
+  "include": ["./src/**/*", "./scripts", "tests", "typings", "./typechain-types"],
   "files": ["./hardhat.config.ts"],
   "exclude": ["node_modules", "build", "scripts"]
 }
