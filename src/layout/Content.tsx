@@ -14,5 +14,6 @@ const Content: FC<IContentProps> = ({ children }) => {
     </>
   );
 };
+Content.displayName = 'ContentComponent';
 
 export default Content;

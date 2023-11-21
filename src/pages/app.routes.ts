@@ -3,12 +3,22 @@ import { IRoute } from '../utils/routes/IRoute';
 export const appRoutes: IRoute[] = [
   {
     path: '/',
-    component: () => import('./state/state'),
+    component: () => import('./entrust/entrust'),
     lazyload: true,
   },
   {
     path: '/entrust',
     component: () => import('./entrust/entrust'),
+    lazyload: true,
+  },
+  {
+    path: '/shop',
+    component: () => import('./shop/shop'),
+    lazyload: true,
+  },
+  {
+    path: '/profile',
+    component: () => import('./user/profile'),
     lazyload: true,
   },
   {

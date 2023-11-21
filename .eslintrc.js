@@ -20,7 +20,8 @@ module.exports = {
     'no-mixed-spaces-and-tabs': [2, false],
     'no-multi-spaces': 1, //不能用多余的空格,
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-filename-extension': [1, { "extensions": [".js", ".jsx", ".tsx"] }]
+    'react/jsx-filename-extension': [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    'react/display-name':'off'
   },
   settings: {
     //自动发现React的版本，从而进行规范react代码

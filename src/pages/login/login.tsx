@@ -6,5 +6,6 @@ const LoginPage: FC = () => {
     </div> 
    
 }
+LoginPage.displayName = 'LoginPage';
 
 export default LoginPage;

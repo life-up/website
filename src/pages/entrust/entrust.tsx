@@ -4,8 +4,9 @@ import Content from '@/layout/Content';
 const entrust:FC = ()=>{
   return(
     <Content>
-      <div>委托页面</div>
+      <div>任务页面</div>
     </Content>
   )
 }
+entrust.displayName = 'entrustPage';
 export default entrust;
