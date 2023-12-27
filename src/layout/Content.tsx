@@ -1,16 +1,21 @@
 import { FC } from 'react';
 import Footer from './Footer';
 import style from './Content.module.less';
+import { Outlet } from 'react-router-dom';
 interface IContentProps {
-  children: React.ReactNode;
+  // children: React.ReactNode;
 }
-const Content: FC<IContentProps> = ({ children }) => {
+// const Content: FC<IContentProps> = ({ children }) => {
+const Content: FC<IContentProps> = () => {
   return (
     <>
-      <section className={`${style.content} bg-white max-w-md m-auto shadow-lg rounded-2xl overflow-hidden`}>
-        {children}
+      <div className={`${style.content} min-h-screen bg-white flex flex-col max-w-md m-auto shadow-lg rounded-2xl overflow-hidden`}>
+        <section className='flex-1'>
+          <Outlet />
+        </section>
+        {/* {children} */}
         <Footer></Footer>
-      </section>
+      </div>
     </>
   );
 };
